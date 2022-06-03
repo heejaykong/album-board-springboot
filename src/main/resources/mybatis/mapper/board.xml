@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper
-  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.mycompany.backend.BoardDao">
+<mapper namespace="com.mycompany.backend.dao.BoardDao">
 	<select id="count" resultType="int">
 		SELECT COUNT(*) FROM BOARD
 	</select>
@@ -76,7 +74,7 @@
 			SET 
 				btitle=#{btitle}, bcontent=#{bcontent}, bdate=SYSDATE,
 				battachoname=#{battachoname},
-				battachsname=#{battachsname}, battachtype=#{battachtype})
+				battachsname=#{battachsname}, battachtype=#{battachtype}
 			WHERE BNO=#{bno}
 		</if>
 	</update>
