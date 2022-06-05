@@ -83,7 +83,7 @@ public class BoardController {
   }
 
   // Update
-  @PutMapping("/{bno}")
+  @PutMapping("/")
   public Board put(Board board) {
     log.info("실행");
     // 첨부파일까지 수정했는지 확인
