@@ -12,7 +12,7 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 public class Jwt {
   private static final String JWT_SECRET_KEY = "kosa12345";
-  private static final long ACCESS_TOKEN_DURATION = 1000 * 20; // 30분
+  private static final long ACCESS_TOKEN_DURATION = 1000 * 60 * 30; // 30분
   public static final long REFRESH_TOKEN_DURATION = 1000 * 60 * 60 * 24;
 
   // 1. AccessToken 생성하기
