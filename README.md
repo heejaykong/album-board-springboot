@@ -28,7 +28,7 @@ spring boot, Oracle, MyBatis
       <td>게시글 bno로 조회</td>
     </tr>
     <tr>
-      <td>/board/:id</td>
+      <td>/board/</td>
       <td>PUT</td>
       <td>게시글 수정</td>
     </tr>
