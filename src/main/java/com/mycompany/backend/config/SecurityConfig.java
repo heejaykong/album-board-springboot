@@ -43,6 +43,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     
 //    요청경로 권한 설정하기
     http.authorizeRequests()
+        .antMatchers("/board/list/**").permitAll()
+        .antMatchers("/board/battach/**").permitAll()
         .antMatchers("/board/**").authenticated()
         .antMatchers("/**").permitAll();
     
